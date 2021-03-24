@@ -22,3 +22,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+在使用less-loder时，需要安装5.0.0，因为高版本会报错
+
