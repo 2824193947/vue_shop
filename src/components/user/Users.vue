@@ -300,11 +300,10 @@ export default {
       }).catch(error => {
         return error
       })
-      console.log(confirmResult)
-      if (confirmResult === confirm) {
+      if (confirmResult === 'confirm') {
         const { data: res } = await this.$http.delete('users/' + id)
         if (res.meta.status !== 200) {
-          this.$message.error('删除失败')
+          return this.$message.error('删除失败')
         }
         this.$message.success('删除成功')
         this.getUserList()
