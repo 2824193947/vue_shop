@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import './plugins/element.js'
+import TreeTable from 'vue-table-with-tree-grid'
 // 导入字体图标
 import './assets/fonts/iconfont.css'
 // 导入全局样式
@@ -18,7 +19,8 @@ axios.interceptors.request.use(config => {
 })
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
-
+// 将下载的树形table依赖组件注册为全局组件
+Vue.component('tree-table', TreeTable)
 new Vue({
   router,
   render: h => h(App)
