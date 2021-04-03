@@ -1,7 +1,9 @@
 import Vue from 'vue'
-import { Button, Input, Form, FormItem, Message, Container, Header, Aside, Main, Menu, Submenu, MenuItemGroup, MenuItem, Breadcrumb, BreadcrumbItem, Card, Row, Col, Table, TableColumn, Switch, Tooltip, Pagination, Dialog, MessageBox, Tag, Tree, Select, Option, Loading, Cascader } from 'element-ui'
+import { Button, Input, Form, FormItem, Message, Container, Header, Aside, Main, Menu, Submenu, MenuItemGroup, MenuItem, Breadcrumb, BreadcrumbItem, Card, Row, Col, Table, TableColumn, Switch, Tooltip, Pagination, Dialog, MessageBox, Tag, Tree, Select, Option, Loading, Cascader, Alert, Tabs, TabPane } from 'element-ui'
 // vue注册为全局组件
 Vue.use(Button)
+Vue.use(TabPane)
+Vue.use(Tabs)
 Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Input)
@@ -30,5 +32,6 @@ Vue.use(Select)
 Vue.use(Option)
 Vue.use(Loading)
 Vue.use(Cascader)
+Vue.use(Alert)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
