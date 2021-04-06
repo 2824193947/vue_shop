@@ -1,8 +1,12 @@
 import Vue from 'vue'
-import { Button, Input, Form, FormItem, Message, Container, Header, Aside, Main, Menu, Submenu, MenuItemGroup, MenuItem, Breadcrumb, BreadcrumbItem, Card, Row, Col, Table, TableColumn, Switch, Tooltip, Pagination, Dialog, MessageBox, Tag, Tree, Select, Option, Loading, Cascader, Alert, Tabs, TabPane } from 'element-ui'
+import { Button, Input, Form, FormItem, Message, Container, Header, Aside, Main, Menu, Submenu, MenuItemGroup, MenuItem, Breadcrumb, BreadcrumbItem, Card, Row, Col, Table, TableColumn, Switch, Tooltip, Pagination, Dialog, MessageBox, Tag, Tree, Select, Option, Loading, Cascader, Alert, Tabs, TabPane, Steps, Step, CheckboxGroup, Checkbox, Upload } from 'element-ui'
 // vue注册为全局组件
 Vue.use(Button)
+Vue.use(Upload)
+Vue.use(Checkbox)
+Vue.use(CheckboxGroup)
 Vue.use(TabPane)
+Vue.use(Steps)
 Vue.use(Tabs)
 Vue.use(Form)
 Vue.use(FormItem)
@@ -33,5 +37,6 @@ Vue.use(Option)
 Vue.use(Loading)
 Vue.use(Cascader)
 Vue.use(Alert)
+Vue.use(Step)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm

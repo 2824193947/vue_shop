@@ -38,10 +38,10 @@
           </el-menu>
         </el-aside>
         <!-- 侧内容 -->
-      <el-main>
-        <router-view></router-view>
-      </el-main>
-    </el-container>
+        <el-main>
+          <router-view></router-view>
+        </el-main>
+     </el-container>
   </el-container>
 </template>
 
@@ -99,9 +99,13 @@ export default {
 
 <style lang="less" scoped>
 .home-container {
+  position: relative;
   height: 100%;
 }
 .el-header {
+  position: relative;
+  top: 0;
+  left: 0;
   background-color: #373d41;
   display: flex;
   justify-content: space-between;
@@ -122,12 +126,22 @@ export default {
   }
 }
 .el-aside {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  height: 100%;
   background-color: #333744;
   .el-menu {
     border: 0;
   }
 }
 .el-main {
+  position: absolute;
+  left: 200px;
+  right: 0;
+  top: 60px;
+  bottom: 0;
+  overflow-y: scroll;
   background-color: #eaedf1;
 }
 .iconfont {
