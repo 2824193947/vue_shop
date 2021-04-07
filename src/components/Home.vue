@@ -110,6 +110,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 70px !important;
   div {
     display: flex;
     height: 44px;
@@ -127,7 +128,7 @@ export default {
 }
 .el-aside {
   position: absolute;
-  top: 60px;
+  top: 70px;
   left: 0;
   height: 100%;
   background-color: #333744;
@@ -139,7 +140,7 @@ export default {
   position: absolute;
   left: 200px;
   right: 0;
-  top: 60px;
+  top: 70px;
   bottom: 0;
   overflow-y: scroll;
   background-color: #eaedf1;

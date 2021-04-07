@@ -33,3 +33,9 @@ html,body,#app {
 .ql-editor {
   min-height: 300px;
 }
+.el-submenu__title {
+  font-size: 15px;
+}
+.el-submenu__title span {
+  padding-left: 7px;
+}
