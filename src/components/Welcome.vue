@@ -21,7 +21,7 @@ export default {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translateX(-280px);
+    transform: translate(-280px,-100px);
     display: block;
   }
   .span{
