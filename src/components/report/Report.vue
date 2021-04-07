@@ -21,7 +21,7 @@ import _ from 'lodash'
 export default {
   data () {
     return {
-      // 服务器数据功能不全面,需要合并的数据  
+      // 服务器数据功能不全面,需要合并的数据
       options: {
         title: {
           text: '用户来源'
@@ -56,18 +56,18 @@ export default {
   },
   created () {
   },
-  // dom初始化后执行 
+  // dom初始化后执行
   async mounted () {
     // echars第三步
     var myChart = echarts.init(document.getElementById('main'))
-    const { data:res } = await this.$http.get('reports/type/1')
+    const { data: res } = await this.$http.get('reports/type/1')
     if (res.meta.status !== 200) {
       this.$message.error('获取折现图数据列表失败!')
     }
     console.log(res.data)
     // echars第四步
     // loadsh有一个合并对象的函数
-   const result =  _.merge(res.data, this.options)
+    const result = _.merge(res.data, this.options)
     // 展示数据
     myChart.setOption(result)
   },
