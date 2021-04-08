@@ -31,5 +31,8 @@ module.exports = {
             return args
         })
     })
+  },
+  build:{
+    assetsPublicPath:'./'
   }
 }
