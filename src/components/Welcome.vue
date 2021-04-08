@@ -10,7 +10,7 @@ export default {
     }
   },
   created () {
-    var timestamp1 = Date.parse(new Date());
+    var timestamp1 = Date.parse(new Date())
     this.date = timestamp1
   }
 }

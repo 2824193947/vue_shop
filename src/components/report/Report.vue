@@ -64,7 +64,7 @@ export default {
     if (res.meta.status !== 200) {
       this.$message.error('获取折现图数据列表失败!')
     }
-    console.log(res.data)
+    console.log(res)
     // echars第四步
     // loadsh有一个合并对象的函数
     const result = _.merge(res.data, this.options)
