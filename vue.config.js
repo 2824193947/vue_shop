@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/vue_shop/public/',
+  publicPath: '/vue_shop/',
   chainWebpack: config => {
     // (发布模式)查找并使用的是cdn资源
     config.when(process.env.NODE_ENV === 'production', config => {
