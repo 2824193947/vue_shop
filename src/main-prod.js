@@ -21,7 +21,7 @@ import VueQuillEditor from 'vue-quill-editor'
 // edit富文本框组件注册为全局组件
 Vue.use(VueQuillEditor)
 
-axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
+axios.defaults.baseURL = 'https://www.liulongbin.top:8888/api/private/v1/'
 Vue.prototype.$http = axios
 // request拦截器
 // 在request拦截器中添加进度条样式 Nprogress.start()
